@@ -8,8 +8,6 @@ if (typeof process.env.NO_DE_URL !== 'undefined') {
     NO_DE_URL = process.env.NO_DE_URL;
 }
 
-console.log(NO_DE_URL);
-
 /**
  * Shorten the provided url using the no.de shortener service.
  *

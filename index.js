@@ -1,8 +1,14 @@
 var assert = require('assert-plus');
+var process = require('process');
 var restifyclients = require('restify-clients');
 
-var NO_DE_URL = 'http://i.no.de/';
-// var NO_DE_URL = 'http://localhost:8080/';
+var NO_DE_URL = 'https://i.no.de/';
+
+if (typeof process.env.NO_DE_URL !== 'undefined') {
+    NO_DE_URL = process.env.NO_DE_URL;
+}
+
+console.log(NO_DE_URL);
 
 /**
  * Shorten the provided url using the no.de shortener service.

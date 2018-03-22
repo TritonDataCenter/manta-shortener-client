@@ -1,6 +1,6 @@
 {
   "name": "manta-shortener-client",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Shortens Manta urls",
   "repository": "joyent/manta-shortener-client",
   "main": "index.js",
